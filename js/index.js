@@ -28,6 +28,25 @@ console.log(fourthH2)
 console.log(busImg)
 console.log(destinationImg)
 
-navBar.addEventListener('auxclick', (event)=> {
+navBar.addEventListener('auxclick', (event) => {
     event.target.style.color = 'red'
 })
+
+navBar1.addEventListener('click', (event) => {
+    event.target.style.color = 'navy'
+})
+
+navBar2.addEventListener('mouseover', (event) => {
+    event.target.style.color = 'pink'
+})
+
+navBar3.addEventListener('mouseenter', (event) => {
+    event.target.style.color = 'purple'
+})
+
+header.addEventListener('mouseleave', (event) => {
+    event.target.style.color = 'green'
+})
+
+
+
