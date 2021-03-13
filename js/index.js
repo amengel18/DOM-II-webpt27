@@ -39,6 +39,9 @@ navBar1.addEventListener('click', (event) => {
 navBar2.addEventListener('mouseover', (event) => {
     event.target.style.color = 'pink'
 })
+navBar2.addEventListener('mouseleave', (event) => {
+    event.target.style.color = 'blue'
+})
 
 navBar3.addEventListener('mouseenter', (event) => {
     event.target.style.color = 'purple'
@@ -48,5 +51,31 @@ header.addEventListener('mouseleave', (event) => {
     event.target.style.color = 'green'
 })
 
+firstH2.addEventListener('keydown', (event) => {
+    if(event.key === ''){
+    event.target.style.border = '8px solid blue'
+    }
+})
 
+secondH2.addEventListener('wheel', (event)=> {
+    event.target.textContent= 'Welcome!!!'
+})
 
+thirdH2.addEventListener('mouseout', (event) => {
+    event.target.style.color = 'hot pink'
+})
+
+fourthH2.addEventListener('focus', (event)=>{
+    event.target.style.backgroundColor= 'sky blue'
+})
+
+busImg.addEventListener('dblclick', (event) => {
+    event.target.textContent = 'Get ready NOW!'
+})
+
+const navLinks = document.querySelectorAll('nav a')
+navLinks.forEach(item => {
+    item.addEventListener('click', (event) => {
+        event.preventDefault()
+    })
+})
